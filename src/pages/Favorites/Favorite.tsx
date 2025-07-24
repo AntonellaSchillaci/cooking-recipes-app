@@ -15,6 +15,7 @@ function Favorites() {
             <div key={meal.idMeal} className="favorite-card">
               <img className="favorites-img" src={meal.strMealThumb} alt={meal.strMeal} />
               <h3 className="favorites-sub">{meal.strMeal}</h3>
+              <a href={`/recipe/${meal.idMeal}`} className="recipe-link">Scopri di più</a>
               <button className="favorites-btn" onClick={() => removeFavorite(meal.idMeal)}>Rimuovi 💔</button>
             </div>
           ))}
