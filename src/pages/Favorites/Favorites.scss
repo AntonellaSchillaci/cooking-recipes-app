@@ -1,0 +1,64 @@
+@use '../../styles/variables' as *;
+
+.favorites-page {
+  padding: 2rem;
+  background-color: $color-background;
+  color: $color-dark;
+  min-height: 100vh;
+  text-align: center;
+
+  .favorites-title {
+    color: $color-primary;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .favorites-info {
+    font-style: italic;
+    color: $color-dark;
+  }
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.favorite-card {
+  background-color: $color-light;
+  border: 2px solid $color-secondary;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .favorites-img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .favorites-sub {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: $color-primary;
+  }
+
+  .favorites-btn {
+    background: none;
+    border: none;
+    color: $color-accent;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
