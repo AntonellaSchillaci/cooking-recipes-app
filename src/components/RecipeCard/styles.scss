@@ -2,7 +2,8 @@
 
 .recipe-card {
   background-color: $color-secondary;
-  border: 1px solid $color-dark;
+  border: 1px solid $color-primary;
+  margin: 10px;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
@@ -18,12 +19,14 @@
     font-family: $font-title;
     color: $color-primary;
     margin: 0.5rem 0;
+    font-size: 1.1rem;
   }
 
   .recipe-link {
     color: $color-accent;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 
     &:hover {
       color: $color-primary;
@@ -34,3 +37,4 @@
     transform: scale(1.02);
   }
 }
+

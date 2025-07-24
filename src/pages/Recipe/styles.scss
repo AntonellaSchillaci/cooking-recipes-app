@@ -1,0 +1,37 @@
+@use '../../styles/variables' as *;
+
+.recipe-detail {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  .recipe-title {
+    font-size: 2rem;
+    color: $color-primary;
+  }
+
+  .recipe-img {
+    width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .recipe-title-instructions {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $color-accent;
+  }
+
+  .recipe-sub-section {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $color-dark;
+
+    .recipes-strong {
+        font-size: 1.2rem;
+        color: $color-primary;
+    }
+  }
+}
