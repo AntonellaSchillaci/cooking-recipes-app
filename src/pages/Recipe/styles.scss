@@ -6,6 +6,27 @@
   margin: 0 auto;
   text-align: center;
 
+  .back-container {
+    display: flex;
+    justify-content: flex-start;
+    
+    .back-button {
+        background-color: $color-accent;
+        color: $color-light;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        transition: background-color 0.2s ease;
+    
+        &:hover {
+        background-color: $color-primary;
+        }
+    }
+  }
+
   .recipe-title {
     font-size: 2rem;
     color: $color-primary;
@@ -23,6 +44,23 @@
     font-weight: 900;
     color: $color-accent;
   }
+
+  .list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  
+    .list-element {
+      background-color: $color-secondary;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: $color-dark;
+    }
+  }
+  
 
   .recipe-sub-section {
     font-size: 1rem;
