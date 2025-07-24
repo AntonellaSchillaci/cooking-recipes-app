@@ -1,5 +1,5 @@
 import { useFavorites } from '../../context/useFavorites';
-import './favorites.scss';
+import './Favorites.scss';
 
 function Favorites() {
   const { favorites, removeFavorite } = useFavorites();
