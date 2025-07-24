@@ -1,0 +1,36 @@
+@use '../../styles/variables' as *;
+
+.recipe-card {
+  background-color: $color-secondary;
+  border: 1px solid $color-dark;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+
+  .recipe-image {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+
+  .recipe-title {
+    font-family: $font-title;
+    color: $color-primary;
+    margin: 0.5rem 0;
+  }
+
+  .recipe-link {
+    color: $color-accent;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
