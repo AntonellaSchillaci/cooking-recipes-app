@@ -1,14 +1,12 @@
+import { Outlet } from 'react-router-dom'
 import './App.scss'
 
 function App() {
- 
 
   return (
-    <>
-      <div>
-        <h1>🍝 Ricette App</h1>
-      </div>
-    </>
+   <div className="app">
+    <Outlet />
+   </div>
   )
 }
 
