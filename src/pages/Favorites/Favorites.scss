@@ -20,11 +20,13 @@
 }
 
 .favorites-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
 
 .favorite-card {
   background-color: $color-light;
@@ -61,4 +63,37 @@
       text-decoration: underline;
     }
   }
+
+  .recipe-link {
+    display: block;
+    margin-top: 0.5rem;
+    color: $color-accent;
+    font-weight: 600;
+    text-decoration: none;
+  
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  
 }
+
+.favorite-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .favorite-card {
+      flex: 1 1 calc(50% - 1.5rem);
+      max-width: calc(50% - 1.5rem);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .favorite-card {
+      flex: 1 1 calc(33.333% - 1.5rem);
+      max-width: calc(33.333% - 1.5rem);
+    }
+  }
+  
